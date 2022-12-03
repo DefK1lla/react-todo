@@ -1,0 +1,19 @@
+@import "../../../styles/vars";
+
+.btn {
+  padding: 5px 15px;
+
+  font-size: inherit;
+  text-transform: uppercase;
+  color: $color-primary;
+
+  background: none;
+  border: 2px solid $color-primary;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-white;
+
+    background: $color-primary;
+  }
+}

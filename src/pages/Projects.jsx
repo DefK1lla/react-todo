@@ -1,9 +1,13 @@
-import React from "react";
+import H1 from "../components/ui/H1";
+import ProjectForm from "../components/ProjectForm";
 
 export default function Projects() {
   return (
-    <div>
-      Projects
-    </div>
+    <>
+      <H1>
+        Projects
+      </H1>
+      <ProjectForm />
+    </>
   );
 };
