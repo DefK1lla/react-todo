@@ -9,7 +9,7 @@ export default function ProjectsItem({ project }) {
     >
       <Link
         className={styles.link}
-        to={`/projects${project.id}`}
+        to={`/projects/${project.id}`}
       >
         {project.name}
       </Link>

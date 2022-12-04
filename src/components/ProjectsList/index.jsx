@@ -1,10 +1,15 @@
 import styles from "./styles.module.scss";
 
+import { useSelector } from "react-redux";
+
+import { selectProjects } from "../../store/projectsReducer";
+
 import Container from "../layout/Container";
 import ProjectsItem from "../ProjectsItem";
 
-export default function ProjectsList({ projects }) {
-  console.log(projects)
+export default function ProjectsList() {
+  const projects = useSelector(selectProjects).items;
+
   return (
     <Container>
       <ul
