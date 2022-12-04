@@ -23,10 +23,13 @@ export default function ProjectForm({ onSubmit }) {
         <Textfield
           placeholder="Enter project name"
           onChange={e => setName(e.target.value)}
+          fullwidth
         />
 
-        <Button>
-          Create a project
+        <Button
+          type="submit"
+        >
+          Add
         </Button>
       </form>
     </Container>
