@@ -5,7 +5,7 @@ import LocalStorage from "../utils/LocalStorage";
 const ADD_PROJECT = "ADD_PROJECT";
 const REMOVE_PROJECT = "REMOVE_PROJECT";
 
-const defaultState = { items: LocalStorage.getProjects() ?? [] };
+const defaultState = LocalStorage.getProjects() ?? { items: [] };
 
 export default function projectsReducer(state = defaultState, action) {
   let newState = {};

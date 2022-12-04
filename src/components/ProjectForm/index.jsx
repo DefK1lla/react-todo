@@ -12,6 +12,7 @@ export default function ProjectForm({ onSubmit }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(name);
+    setName("");
   };
 
   return (
@@ -22,6 +23,7 @@ export default function ProjectForm({ onSubmit }) {
       >
         <Textfield
           placeholder="Enter project name"
+          value={name}
           onChange={e => setName(e.target.value)}
           fullwidth
         />

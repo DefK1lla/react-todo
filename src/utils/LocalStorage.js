@@ -1,9 +1,9 @@
 export default class LocalStorage {
   static getProjects = () => {
-    return localStorage.getItem("projects");
+    return JSON.parse(localStorage.getItem("projects"));
   }
 
   static setProjects = (projects) => {
-    localStorage.setItem("projects", projects);
+    localStorage.setItem("projects", JSON.stringify(projects));
   }
 }
