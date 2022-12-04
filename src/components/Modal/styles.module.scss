@@ -1,0 +1,56 @@
+@import "../../styles/vars";
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background: rgba($color-black, 0.2);
+  backdrop-filter: blur(7px);
+
+  &Body {
+    min-height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 10px;
+  }
+
+  &Content {
+    position: relative;
+
+    width: 100%;
+    max-width: 1000px;
+
+    padding: 35px;
+
+    background: $color-white;
+    box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  }
+
+  &Close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    font-size: 24px;
+    color: $color-primary;
+
+    background: transparent;
+    border: none;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
