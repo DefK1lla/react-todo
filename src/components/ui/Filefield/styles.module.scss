@@ -1,0 +1,26 @@
+@import "../../../styles/vars";
+
+.label {
+  width: 100%;
+  max-width: 300px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px
+}
+
+.field {
+  display: none;
+}
+
+.btn {
+  padding: 5px 10px;
+
+  font-family: inherit;
+  font-size: inherit;
+  color: $color-white;
+
+  background: $color-primary;
+  cursor: pointer;
+  border-radius: 15px;
+}

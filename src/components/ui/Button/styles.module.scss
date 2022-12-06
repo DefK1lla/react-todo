@@ -11,6 +11,11 @@
   border: 2px solid $color-primary;
   cursor: pointer;
 
+  &_center {
+    display: block;
+    margin: 0 auto;
+  }
+
   &:hover {
     color: $color-white;
 

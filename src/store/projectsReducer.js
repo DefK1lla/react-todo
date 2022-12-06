@@ -1,5 +1,3 @@
-import uniqid from "uniqid";
-
 import LocalStorage from "../utils/LocalStorage";
 
 const ADD_PROJECT = "ADD_PROJECT";
@@ -12,7 +10,7 @@ export default function projectsReducer(state = defaultState, action) {
 
   switch (action.type) {
     case ADD_PROJECT:
-      newState.items = [...state.items, { id: uniqid(), name: action.payload }];
+      newState.items = [...state.items, action.payload];
       LocalStorage.setProjects(newState);
       return newState;
     case REMOVE_PROJECT:
